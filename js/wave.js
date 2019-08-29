@@ -1,4 +1,4 @@
-// Paper.js wave example
+// Paper.js wave example http://paperjs.org/examples/smoothing/
 
 var width, height, center;
 var points = 10;
