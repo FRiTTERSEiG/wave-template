@@ -1,0 +1,16 @@
+/* Format for applying styling rules */
+[selector] {
+  [property]: [value];
+}
+
+/* Global Styles go here */
+body {
+  background: white;
+  color: black;
+}
+
+canvas {
+  width: 500px;
+  height: 200px;
+  background-color: lightblue;
+}
