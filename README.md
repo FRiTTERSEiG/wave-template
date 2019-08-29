@@ -3,7 +3,7 @@ For www.stuffmov.es | P2 – book brief | base skeleton site template using pap
 
 Extended from https://github.com/sehsarah/book-template using the smoothing demo from the Paper.js website http://paperjs.org/examples/smoothing/
 
-## Running locally
+## RUNNING LOCALLY
 
 Use the below command to start a local PHP server on your Mac
 
