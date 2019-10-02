@@ -1,4 +1,4 @@
-// Paper.js wave example http://paperjs.org/examples/smoothing/
+
 
 // 3 waves - black, pink & orange
 
