@@ -1,38 +1,47 @@
-// Paper.js wave example http://paperjs.org/examples/smoothing/
+
 
 var width, height, center;
 var points = 10;
 var smooth = true;
-var path = new Path();
+
 var mousePos = view.center / 2;
 var pathHeight = mousePos.y;
-path.fillColor = 'black';
-initializePath();
 
-function initializePath() {
+var path = new Path();
+var path2 = new Path();
+var path3 = new Path();
+
+path.fillColor = 'black';
+path2.fillColor = 'pink';
+path3.fillColor = 'orange';
+
+initializePath(path);
+initializePath(path2);
+initializePath(path3);
+
+function initializePath(p) {
 	center = view.center;
 	width = view.size.width;
-	height = view.size.height / 2;
-	path.segments = [];
-	path.add(view.bounds.bottomLeft);
-	for (var i = 1; i < points; i++) {
-		var point = new Point(width / points * i, center.y);
-		path.add(point);
-	}
-	path.add(view.bounds.bottomRight);
-	path.fullySelected = true;
+
+	p.fullySelected = true;
 }
 
 function onFrame(event) {
 	pathHeight += (center.y - mousePos.y - pathHeight) / 10;
-	for (var i = 1; i < points; i++) {
-		var sinSeed = event.count + (i + i % 10) * 100;
-		var sinHeight = Math.sin(sinSeed / 200) * pathHeight;
-		var yPos = Math.sin(sinSeed / 100) * sinHeight + height;
-		path.segments[i].point.y = yPos;
+	path2.segments[i].point.y = yPos;
+}
+
+for (var i = 1; i < points; i++) {
+		var sinSeed = event.count + (i + i % 5) * 50;
+		var sinHeight = Math.sin(sinSeed / 100) * pathHeight;
+		var yPos = Math.sin(sinSeed / 50) * sinHeight + height;
+		path3.segments[i].point.y = yPos;
 	}
-	if (smooth)
-		path.smooth({ type: 'continuous' });
+
+if (smooth)
+	path.smooth({ type: 'continuous' });
+	path2.smooth({ type: 'continuous' });
+	path3.smooth({ type: 'continuous' });
 }
 
 function onMouseMove(event) {
@@ -40,18 +49,13 @@ function onMouseMove(event) {
 }
 
 function onMouseDown(event) {
-	smooth = !smooth;
-	if (!smooth) {
-		// If smooth has been turned off, we need to reset
-		// the handles of the path:
-		for (var i = 0, l = path.segments.length; i < l; i++) {
-			var segment = path.segments[i];
-			segment.handleIn = segment.handleOut = null;
-		}
+	// smooth = !smooth;
+	// if (!smooth) {
 	}
 }
 
-// Reposition the path whenever the window is resized:
 function onResize(event) {
-	initializePath();
+	initializePath(path);
+	initializePath(path2);
+	initializePath(path3);
 }
