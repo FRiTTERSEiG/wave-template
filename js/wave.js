@@ -1,5 +1,7 @@
 // Paper.js wave example http://paperjs.org/examples/smoothing/
 
+// 3 waves - black, pink & orange
+
 var width, height, center;
 var points = 10;
 var smooth = true;
@@ -34,6 +36,7 @@ function initializePath(p) {
 }
 
 // Called by Paper.js on each frame
+// THis is where each wave is told to move differently
 function onFrame(event) {
 	pathHeight += (center.y - mousePos.y - pathHeight) / 10;
 
