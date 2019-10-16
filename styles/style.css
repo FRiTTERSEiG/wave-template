@@ -10,6 +10,7 @@ body {
 }
 
 canvas {
+  heigth: 100%;
   width: 100%;
   background-color: lightblue;
 }
