@@ -12,7 +12,7 @@ var path = new Path();
 var path2 = new Path();
 var path3 = new Path();
 
-path.fillColor = 'red/pink';
+path.fillColor = 'FF0042';
 path2.fillColor = 'pink';
 path3.fillColor = 'orange';
 
