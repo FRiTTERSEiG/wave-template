@@ -12,8 +12,8 @@ var path = new Path();
 var path2 = new Path();
 var path3 = new Path();
 
-path.fillColor = 'CDA2E8';
-path2.fillColor = 'FFFB2E';
+path.fillColor = 'yellow';
+path2.fillColor = 'pink';
 path3.fillColor = 'orange';
 
 initializePath(path);
