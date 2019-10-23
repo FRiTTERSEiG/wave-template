@@ -1,6 +1,6 @@
 
 
-// 3 waves - black, pink & orange
+// 3 waves - yellow, pink & orange
 
 var width, height, center;
 var points = 10;
