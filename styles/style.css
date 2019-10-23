@@ -11,7 +11,7 @@ body {
 
 canvas {
   width: 100%;
-  background-color: '2AE3DF';
+  background-color: lightblue;
 }
 
 * { margin: 0; padding: 0;}
