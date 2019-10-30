@@ -4,7 +4,7 @@
 
 var width, height, center;
 var points = 10;
-var smooth = true;
+var smooth = false;
 var mousePos = view.center / 2;
 var pathHeight = mousePos.y;
 
