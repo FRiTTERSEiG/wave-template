@@ -26,12 +26,12 @@ function initializePath(p) {
 	width = view.size.width;
 	height = view.size.height / 2;
 	p.segments = [];
-	//p.add(view.bounds.bottomLeft);
-	//for (var i = 1; i < points; i++) {
-	//	var point = new Point(width / points * i, center.y);
-	//	p.add(point);
-	//}
-	//p.add(view.bounds.bottomRight);
+	p.add(view.bounds.bottomLeft);
+	for (var i = 1; i < points; i++) {
+		var point = new Point(width / points * i, center.y);
+		p.add(point);
+	}
+	p.add(view.bounds.bottomRight);
 	p.fullySelected = true;
 }
 
