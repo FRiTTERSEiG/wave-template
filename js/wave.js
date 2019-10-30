@@ -3,7 +3,7 @@
 // 3 waves - yellow, pink & orange
 
 var width, height, center;
-var points = 100;
+var points = 1000;
 var smooth = true;
 var mousePos = view.center / 2;
 var pathHeight = mousePos.y;
