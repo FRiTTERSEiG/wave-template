@@ -32,7 +32,7 @@ function initializePath(p) {
 		p.add(point);
 	}
 	p.add(view.bounds.bottomRight);
-	p.fullySelected = true;
+	p.fullySelected = false;
 }
 
 // Called by Paper.js on each frame
