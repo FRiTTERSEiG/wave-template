@@ -104,7 +104,7 @@ for (var i = 0; i < 6; i++) {
 return color;
 }
 
-$("#asset1").click(function(){
+$("body").click(function(){
 path.fillColor = getRandomColor();
 path2.fillColor = getRandomColor();
 path3.fillColor = getRandomColor();
