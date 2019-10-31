@@ -105,7 +105,7 @@ return color;
 }
 
 $("#asset1").click(function(){
-var path.fillColor = getRandomColor();
+path.fillColor = getRandomColor();
 path2.fillColor = getRandomColor();
 path3.fillColor = getRandomColor();
 });
