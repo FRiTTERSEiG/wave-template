@@ -13,7 +13,7 @@
   <img id="asset2" src="assets/Asset 2.svg" alt="Dr.Seuss" align="bottomRight">
 <script>
 
-
+$(document).ready(function(){
 // 3 waves - yellow, pink & orange
 
 var width, height, center;
@@ -123,6 +123,8 @@ $("#asset1").click(function(){
   path.fillColor = getRandomColor();
   path2.fillColor = getRandomColor();
   path3.fillColor = getRandomColor();
+
+});
 
 });
 </script>
