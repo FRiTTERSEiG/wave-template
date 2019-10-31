@@ -109,3 +109,12 @@ path.fillColor = getRandomColor();
 path2.fillColor = getRandomColor();
 path3.fillColor = getRandomColor();
 });
+
+
+$("#asset2").click(function(){
+	window.setInterval({
+path.fillColor = getRandomColor();
+path2.fillColor = getRandomColor();
+path3.fillColor = getRandomColor();
+}, 500);
+});
