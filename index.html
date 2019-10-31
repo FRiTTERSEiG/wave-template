@@ -12,21 +12,5 @@
   <canvas id="myCanvas" resize></canvas>
   <img id="asset1" src="assets/Asset 1.svg" alt="Oh the places you'll go title" align="left">
   <img id="asset2" src="assets/Asset 2.svg" alt="Dr.Seuss" align="bottomRight">
-<script>
-function getRandomColor() {
-  var letters = '0123456789ABCDEF';
-  var color = '#';
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-}
-
-$("#asset1").click(function(){
-  path.fillColor = getRandomColor();
-  path2.fillColor = getRandomColor();
-  path3.fillColor = getRandomColor();
-});
-</script>
 </body>
 </html>
