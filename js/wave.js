@@ -104,8 +104,8 @@ for (var i = 0; i < 6; i++) {
 return color;
 }
 
-$("body").click(function(){
+window.setInterval(function(){
 path.fillColor = getRandomColor();
 path2.fillColor = getRandomColor();
 path3.fillColor = getRandomColor();
-});
+}, 5);
