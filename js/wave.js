@@ -112,7 +112,7 @@ path3.fillColor = getRandomColor();
 
 
 $("#asset2").click(function(){
-	window.setInterval({
+	window.setInterval(function(){
 path.fillColor = getRandomColor();
 path2.fillColor = getRandomColor();
 path3.fillColor = getRandomColor();
